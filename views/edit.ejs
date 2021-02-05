@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon: Update</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class='headerContainer'>
+        <div class='header'>
+          <h1>Edit Pokemon Page</h1>
+        </div>
+        <div class="header-btn">
+          <a href="/pokemon"><button class="button" type="button">BACK TO MAIN</button></a>
+        </div>
+    </div>
+
+    <div class="formsContainer">
+        <form action="/pokemon/<%=id%>?_method=PUT" method="POST">
+            <div class="labelInput">
+                <label for="id">ID</label>
+                <input type="text" name="id" value="<%= pokemon.id %>"/>
+            </div>
+            
+    
+            <div class="labelInput">
+                <label for="name">Name</label>
+                <input type="text" name="name" value="<%= pokemon.name %>"/>
+            </div>
+            
+    
+            <div class="labelInput">
+                <label for="img">Image Link</label>
+                <input type="text" name="img" value="<%= pokemon.img %>"/>
+            </div>
+            
+    
+            <div class="labelInput">
+                <label for="type">Type</label>
+                <input type="text" name="type" value="<%= pokemon.type %>"/>
+            </div>
+
+            <div class="labelInput">
+                <label for="type">HP</label>
+                <input type="text" name="hp" value="<%= pokemon.stats.hp %>"/>
+              </div>
+      
+              <div class="labelInput">
+                <label for="type">Attack</label>
+                <input type="text" name="attack" value="<%= pokemon.stats.attack %>"/>
+              </div>
+      
+              <div class="labelInput">
+                <label for="type">Defense</label>
+                <input type="text" name="defense" value="<%= pokemon.stats.defense %>"/>
+              </div>
+      
+              <div class="labelInput">
+                <label for="type">Special Attack</label>
+                <input type="text" name="spattack" value="<%= pokemon.stats.spattack %>"/>
+              </div>
+      
+              <div class="labelInput">
+                <label for="type">Special Defense</label>
+                <input type="text" name="spdefense" value="<%= pokemon.stats.spdefense %>"/>
+              </div>
+      
+              <div class="labelInput">
+                <label for="type">Speed</label>
+                <input type="text" name="speed" value="<%= pokemon.stats.speed %>"/>
+              </div>
+            
+    
+            <div class="labelInput">
+                <input type="submit" class='button' value="Edit Pokemon">
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>

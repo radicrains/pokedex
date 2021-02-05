@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex:Create</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class='headerContainer'>
+
+      <div class='header'>
+        <h1>New Pokemon Page</h1>
+      </div>
+
+      <div class="header-btn">
+        <a href="/pokemon"><button class="button" type="button">BACK TO MAIN</button></a>
+      </div>
+
+    </div>
+
+    <div class="formsContainer">
+      <form action="/pokemon" method="POST">
+  
+        <div class="labelInput">
+          <label for="id">ID</label>
+          <input type="text" name="id" placeholder="150" id="id"/>
+        </div>
+        
+        <div class="labelInput">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Mewtwo" id="name"/>
+        </div>
+        
+        <div class="labelInput">
+          <label for="img">Link</label>
+          <input type="text" name="img" placeholder="paste image link here" id="img"/>
+        </div>
+        
+        <div class="labelInput">
+          <label for="type">Type</label>
+          <input type="text" name="type" placeholder="Psychic" id="type"/>
+        </div>
+
+        <div class="labelInput">
+          <label for="type">HP</label>
+          <input type="text" name="hp" placeholder="10" id="hp"/>
+        </div>
+
+        <div class="labelInput">
+          <label for="type">Attack</label>
+          <input type="text" name="attack" placeholder="2" id="attack"/>
+        </div>
+
+        <div class="labelInput">
+          <label for="type">Defense</label>
+          <input type="text" name="defense" placeholder="1" id="defense"/>
+        </div>
+
+        <div class="labelInput">
+          <label for="type">Special Attack</label>
+          <input type="text" name="spattack" placeholder="3" id="spattack"/>
+        </div>
+
+        <div class="labelInput">
+          <label for="type">Special Defense</label>
+          <input type="text" name="spdefense" placeholder="2" id="spdefense"/>
+        </div>
+
+        <div class="labelInput">
+          <label for="type">Speed</label>
+          <input type="text" name="speed" placeholder="4" id="speed"/>
+        </div>
+
+        
+        <div class="labelInput">
+          <input type="submit" class="button" value="Add Pokemon">
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex: Pokemon Details</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class='headerContainer'>
+            <div class='header'>
+              <h1>New Pokemon Page</h1>
+            </div>
+            <div class="header-btn">
+              <a href="/pokemon"><button class="button" type="button">BACK TO MAIN</button></a>
+            </div>
+        </div>
+        <div class="allpokeDetails">
+            <div class="left">
+                <div id="pokemonDetails">
+                    <h3><%=pokeData.id%> <%=pokeData.name%></h3>
+                    <img src="<%=pokeData.img%>" alt="<%=pokeData.name%>">
+                </div>
+                
+                <div id="pokemonType">
+                    <h4>TYPE</h4>
+                    <p><%=pokeData.type%></p>
+                </div>
+            </div>
+            <div class="right">
+                <h4>STATS</h4>
+                <p>HP: <%=pokeData.stats.hp%></p>
+                <p>ATTACK: <%=pokeData.stats.attack%></p>
+                <p>DEFENSE: <%=pokeData.stats.defense%></p>
+                <p>SPATTACK: <%=pokeData.stats.spattack%></p>
+                <p>SPDEFENSE: <%=pokeData.stats.spdefense%></p>
+                <p>SPEED: <%=pokeData.stats.speed%></p>
+            </div>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>
